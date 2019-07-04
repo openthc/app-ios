@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import HockeySDK
 
 
 @UIApplicationMain
@@ -16,18 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        initializeHockey()
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         return true
-    }
-
-    private func initializeHockey() {
-        BITHockeyManager.shared().configure(withIdentifier: "7f9a0f2715364f7c881002e3ee381461")
-        // Do some additional configuration if needed here
-        BITHockeyManager.shared().start()
-        BITHockeyManager.shared().authenticator.authenticateInstallation()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

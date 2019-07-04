@@ -40,8 +40,8 @@ class ViewController: UIViewController {
         contentView.addSubview(webView)
 
         let views = ["view": contentView!, "webView": webView!]
-        let horizontal = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[webView]-0-|", options: NSLayoutFormatOptions.alignAllCenterY, metrics: nil, views: views)
-        let vertical = NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[webView]-0-|", options: NSLayoutFormatOptions.alignAllCenterX, metrics: nil, views: views)
+        let horizontal = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[webView]-0-|", options: NSLayoutConstraint.FormatOptions.alignAllCenterY, metrics: nil, views: views)
+        let vertical = NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[webView]-0-|", options: NSLayoutConstraint.FormatOptions.alignAllCenterX, metrics: nil, views: views)
         let constraints = horizontal + vertical
         contentView.addConstraints(constraints)
     }
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         webView.load(request)
     }
 
-    func refreshWebView(sender: UIRefreshControl) {
+    @objc func refreshWebView(sender: UIRefreshControl) {
         loadStartingURL()
         sender.endRefreshing()
     }
@@ -81,11 +81,11 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
-    func goBack() {
+    @objc func goBack() {
         webView.goBack()
     }
 
-    func goForward() {
+    @objc func goForward() {
         webView.goForward()
     }
 }
@@ -95,7 +95,7 @@ extension ViewController {
         return true
     }
 
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         guard Platform.isSimulator else {
             return
         }

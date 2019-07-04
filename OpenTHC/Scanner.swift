@@ -13,12 +13,12 @@ import QRCodeReader
 class Scanner {
 
     private struct Constants {
-        static let codeTypes = [AVMetadataObjectTypeQRCode, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeCode128Code]
+        static let codeTypes: [AVMetadataObject.ObjectType] = [.qr, .pdf417, .code128]
     }
 
     private lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeReaderViewControllerBuilder {
-            $0.reader = QRCodeReader(metadataObjectTypes: Constants.codeTypes, captureDevicePosition: .back)
+            $0.reader = QRCodeReader(metadataObjectTypes: Constants.codeTypes, captureDevicePosition: AVCaptureDevice.Position.back)
         }
         let controller = QRCodeReaderViewController(builder: builder)
         controller.modalPresentationStyle = .formSheet
@@ -37,11 +37,7 @@ class Scanner {
             }
             return
         }
-        if let allCodeTypesSupported = try? QRCodeReader.supportsMetadataObjectTypes(Constants.codeTypes),
-            allCodeTypesSupported == false {
-            print("Device does not support all code types in \(Constants.codeTypes)")
-        }
-
+        
         readerVC.completionBlock = { result in
             guard let result = result else {
                 completion(nil)
