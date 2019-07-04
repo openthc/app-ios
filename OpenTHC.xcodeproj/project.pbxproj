@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD2F5B0C1EB54DF6001A5C4A /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F5B0B1EB54DF6001A5C4A /* Scanner.swift */; };
+		DD2F5B0E1EB5501B001A5C4A /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F5B0D1EB5501B001A5C4A /* Platform.swift */; };
+		DD2F5B121EB555DA001A5C4A /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F5B111EB555DA001A5C4A /* QRCodeReader.framework */; };
+		DD2F5B181EB5A741001A5C4A /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F5B161EB5A741001A5C4A /* HockeySDK.framework */; };
+		DD2F5B191EB5A741001A5C4A /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD2F5B171EB5A741001A5C4A /* HockeySDKResources.bundle */; };
+		DD2F5B231EB94BB7001A5C4A /* CustomScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F5B221EB94BB7001A5C4A /* CustomScannerView.swift */; };
+		DD3C239D1EB543B1003F00D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C239C1EB543B1003F00D9 /* AppDelegate.swift */; };
+		DD3C239F1EB543B1003F00D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C239E1EB543B1003F00D9 /* ViewController.swift */; };
+		DD3C23A21EB543B1003F00D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C23A01EB543B1003F00D9 /* Main.storyboard */; };
+		DD3C23A41EB543B1003F00D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3C23A31EB543B1003F00D9 /* Assets.xcassets */; };
+		DD3C23A71EB543B1003F00D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C23A51EB543B1003F00D9 /* LaunchScreen.storyboard */; };
+		DD3C23B21EB543B2003F00D9 /* OpenTHCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C23B11EB543B2003F00D9 /* OpenTHCTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD3C23AE1EB543B1003F00D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD3C23911EB543B1003F00D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3C23981EB543B1003F00D9;
+			remoteInfo = OpenTHC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD2F5B0B1EB54DF6001A5C4A /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		DD2F5B0D1EB5501B001A5C4A /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		DD2F5B111EB555DA001A5C4A /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = SOURCE_ROOT; };
+		DD2F5B161EB5A741001A5C4A /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		DD2F5B171EB5A741001A5C4A /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		DD2F5B221EB94BB7001A5C4A /* CustomScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScannerView.swift; sourceTree = "<group>"; };
+		DD3C23991EB543B1003F00D9 /* OpenTHC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTHC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3C239C1EB543B1003F00D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD3C239E1EB543B1003F00D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD3C23A11EB543B1003F00D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD3C23A31EB543B1003F00D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD3C23A61EB543B1003F00D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD3C23A81EB543B1003F00D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3C23AD1EB543B1003F00D9 /* OpenTHCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTHCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3C23B11EB543B2003F00D9 /* OpenTHCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTHCTests.swift; sourceTree = "<group>"; };
+		DD3C23B31EB543B2003F00D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD3C23961EB543B1003F00D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2F5B181EB5A741001A5C4A /* HockeySDK.framework in Frameworks */,
+				DD2F5B121EB555DA001A5C4A /* QRCodeReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3C23AA1EB543B1003F00D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD2F5B131EB555DE001A5C4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F5B151EB5A741001A5C4A /* HockeySDK.embeddedframework */,
+				DD2F5B111EB555DA001A5C4A /* QRCodeReader.framework */,
+			);
+			name = Frameworks;
+			path = OpenTHC;
+			sourceTree = "<group>";
+		};
+		DD2F5B151EB5A741001A5C4A /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F5B161EB5A741001A5C4A /* HockeySDK.framework */,
+				DD2F5B171EB5A741001A5C4A /* HockeySDKResources.bundle */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = SOURCE_ROOT;
+		};
+		DD3C23901EB543B1003F00D9 = {
+			isa = PBXGroup;
+			children = (
+				DD3C239B1EB543B1003F00D9 /* OpenTHC */,
+				DD2F5B131EB555DE001A5C4A /* Frameworks */,
+				DD3C23B01EB543B1003F00D9 /* OpenTHCTests */,
+				DD3C239A1EB543B1003F00D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD3C239A1EB543B1003F00D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C23991EB543B1003F00D9 /* OpenTHC.app */,
+				DD3C23AD1EB543B1003F00D9 /* OpenTHCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD3C239B1EB543B1003F00D9 /* OpenTHC */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C239C1EB543B1003F00D9 /* AppDelegate.swift */,
+				DD3C239E1EB543B1003F00D9 /* ViewController.swift */,
+				DD2F5B0D1EB5501B001A5C4A /* Platform.swift */,
+				DD2F5B221EB94BB7001A5C4A /* CustomScannerView.swift */,
+				DD2F5B0B1EB54DF6001A5C4A /* Scanner.swift */,
+				DD3C23A01EB543B1003F00D9 /* Main.storyboard */,
+				DD3C23A31EB543B1003F00D9 /* Assets.xcassets */,
+				DD3C23A51EB543B1003F00D9 /* LaunchScreen.storyboard */,
+				DD3C23A81EB543B1003F00D9 /* Info.plist */,
+			);
+			path = OpenTHC;
+			sourceTree = "<group>";
+		};
+		DD3C23B01EB543B1003F00D9 /* OpenTHCTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C23B11EB543B2003F00D9 /* OpenTHCTests.swift */,
+				DD3C23B31EB543B2003F00D9 /* Info.plist */,
+			);
+			path = OpenTHCTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD3C23981EB543B1003F00D9 /* OpenTHC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3C23B61EB543B2003F00D9 /* Build configuration list for PBXNativeTarget "OpenTHC" */;
+			buildPhases = (
+				DD3C23951EB543B1003F00D9 /* Sources */,
+				DD3C23961EB543B1003F00D9 /* Frameworks */,
+				DD3C23971EB543B1003F00D9 /* Resources */,
+				DD2F5B101EB555AC001A5C4A /* Copy Carthage Frameworks */,
+				DD2F5B141EB5A6F4001A5C4A /* HockeyApp Setup */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTHC;
+			productName = OpenTHC;
+			productReference = DD3C23991EB543B1003F00D9 /* OpenTHC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD3C23AC1EB543B1003F00D9 /* OpenTHCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3C23B91EB543B2003F00D9 /* Build configuration list for PBXNativeTarget "OpenTHCTests" */;
+			buildPhases = (
+				DD3C23A91EB543B1003F00D9 /* Sources */,
+				DD3C23AA1EB543B1003F00D9 /* Frameworks */,
+				DD3C23AB1EB543B1003F00D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD3C23AF1EB543B1003F00D9 /* PBXTargetDependency */,
+			);
+			name = OpenTHCTests;
+			productName = OpenTHCTests;
+			productReference = DD3C23AD1EB543B1003F00D9 /* OpenTHCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD3C23911EB543B1003F00D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = OpenTHC;
+				TargetAttributes = {
+					DD3C23981EB543B1003F00D9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YSB99VW2Z3;
+						ProvisioningStyle = Automatic;
+					};
+					DD3C23AC1EB543B1003F00D9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD3C23981EB543B1003F00D9;
+					};
+				};
+			};
+			buildConfigurationList = DD3C23941EB543B1003F00D9 /* Build configuration list for PBXProject "OpenTHC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD3C23901EB543B1003F00D9;
+			productRefGroup = DD3C239A1EB543B1003F00D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD3C23981EB543B1003F00D9 /* OpenTHC */,
+				DD3C23AC1EB543B1003F00D9 /* OpenTHCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD3C23971EB543B1003F00D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3C23A71EB543B1003F00D9 /* LaunchScreen.storyboard in Resources */,
+				DD2F5B191EB5A741001A5C4A /* HockeySDKResources.bundle in Resources */,
+				DD3C23A41EB543B1003F00D9 /* Assets.xcassets in Resources */,
+				DD3C23A21EB543B1003F00D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3C23AB1EB543B1003F00D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD2F5B101EB555AC001A5C4A /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		DD2F5B141EB5A6F4001A5C4A /* HockeyApp Setup */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "HockeyApp Setup";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD3C23951EB543B1003F00D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3C239F1EB543B1003F00D9 /* ViewController.swift in Sources */,
+				DD2F5B0C1EB54DF6001A5C4A /* Scanner.swift in Sources */,
+				DD2F5B0E1EB5501B001A5C4A /* Platform.swift in Sources */,
+				DD2F5B231EB94BB7001A5C4A /* CustomScannerView.swift in Sources */,
+				DD3C239D1EB543B1003F00D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3C23A91EB543B1003F00D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3C23B21EB543B2003F00D9 /* OpenTHCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD3C23AF1EB543B1003F00D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD3C23981EB543B1003F00D9 /* OpenTHC */;
+			targetProxy = DD3C23AE1EB543B1003F00D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD3C23A01EB543B1003F00D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD3C23A11EB543B1003F00D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD3C23A51EB543B1003F00D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD3C23A61EB543B1003F00D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD3C23B41EB543B2003F00D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD3C23B51EB543B2003F00D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD3C23B71EB543B2003F00D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YSB99VW2Z3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
+				INFOPLIST_FILE = OpenTHC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weedtraqr.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD3C23B81EB543B2003F00D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YSB99VW2Z3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
+				INFOPLIST_FILE = OpenTHC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weedtraqr.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD3C23BA1EB543B2003F00D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OpenTHCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weedtraqr.OpenTHCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTHC.app/OpenTHC";
+			};
+			name = Debug;
+		};
+		DD3C23BB1EB543B2003F00D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OpenTHCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weedtraqr.OpenTHCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTHC.app/OpenTHC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD3C23941EB543B1003F00D9 /* Build configuration list for PBXProject "OpenTHC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3C23B41EB543B2003F00D9 /* Debug */,
+				DD3C23B51EB543B2003F00D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3C23B61EB543B2003F00D9 /* Build configuration list for PBXNativeTarget "OpenTHC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3C23B71EB543B2003F00D9 /* Debug */,
+				DD3C23B81EB543B2003F00D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3C23B91EB543B2003F00D9 /* Build configuration list for PBXNativeTarget "OpenTHCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3C23BA1EB543B2003F00D9 /* Debug */,
+				DD3C23BB1EB543B2003F00D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD3C23911EB543B1003F00D9 /* Project object */;
+}
