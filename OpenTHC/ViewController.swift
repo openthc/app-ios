@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     fileprivate lazy var scanner = Scanner()
 
     fileprivate struct Constants {
-        static let startingURL = URL(string: "https://weedtraqr.com/auth/app")!
-        static let testScanningURL = URL(string: "https://weedtraqr.com/software/zxing")!
+        static let startingURL = URL(string: "https://weedtraqr.com/auth/scan")! // should be "https://weedtraqr.com/auth/scan")!
+        static let testScanningURL = URL(string: "https://weedtraqr.com/scan")! // URL(string: "https://weedtraqr.com/auth/app")!
     }
 
     override func viewDidLoad() {
@@ -53,6 +53,7 @@ class ViewController: UIViewController {
         } else {
             startingURL = Constants.startingURL
         }
+        print("about to load \(startingURL)")
         load(url: startingURL)
     }
 
@@ -96,7 +97,8 @@ extension ViewController {
     }
 
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        guard Platform.isSimulator else {
+        print("device uuidString is \(UIDevice.current.identifierForVendor!.uuidString)")
+        guard Platform.isSimulator || UIDevice.current.identifierForVendor!.uuidString == "DC941BB7-97EB-469B-9B25-7AA0251C71B5" else {
             return
         }
         if motion == .motionShake {
@@ -118,6 +120,7 @@ extension ViewController: WKNavigationDelegate {
         }
         if url.scheme == "zxing" && url.host == "scan" {
             decisionHandler(.cancel)
+            // print("ViewController > WKNavigationDelegate > decidePolicyFor navigationActions > about to handle \(url)")
             handleScanURL(url)
         } else {
             decisionHandler(.allow)
@@ -125,6 +128,13 @@ extension ViewController: WKNavigationDelegate {
     }
 
     private func handleScanURL(_ url: URL) {
+        // we need to check here to see what kind of scanner we have.
+        // Is it the iPhone scanner or is it the Sockt Mobile?
+        
+        // Here we should access the SocketMobileScanner class and see if
+        // there is a scanner connected and if so use that 
+        
+        
         guard let reader = URLQueryReader(url: url), let macroURI = reader.parameter(for: "ret") else {
             print("Error parsing url: \(url)")
             return
